@@ -47,7 +47,7 @@ namespace BIA.ProjectCreatorWizard.UI
         /// <value>
         /// The name of the division.
         /// </value>
-        public string DivisionName { get; set; }
+        public string CompanyFilesPath { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether use a common design, if <c>true</c> user can specify the address of ressources, if <c>false</c> the site use local content and script folder.

@@ -29,18 +29,11 @@
         private void InitializeComponent()
         {
             this.CompanyLabel = new System.Windows.Forms.Label();
-            this.RemoteDesignAddressLabel = new System.Windows.Forms.Label();
-            this.UseRemoteDesignLabel = new System.Windows.Forms.Label();
-            this.AddressRemoteDesginTextbox = new System.Windows.Forms.TextBox();
             this.CompanyNameTextbox = new System.Windows.Forms.TextBox();
-            this.UseRemoteDesignCheckbox = new System.Windows.Forms.CheckBox();
             this.ValidateButton = new System.Windows.Forms.Button();
-            this.DivisionNameTextbox = new System.Windows.Forms.TextBox();
+            this.CompanyFilesPath = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.UseSupportMailCheckbox = new System.Windows.Forms.CheckBox();
-            this.SupportMailTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SupportMailLabel = new System.Windows.Forms.Label();
+            this.BrowseCompanyFilesPath = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CompanyLabel
@@ -52,51 +45,16 @@
             this.CompanyLabel.TabIndex = 0;
             this.CompanyLabel.Text = "Company Name :";
             // 
-            // RemoteDesignAddressLabel
-            // 
-            this.RemoteDesignAddressLabel.AutoSize = true;
-            this.RemoteDesignAddressLabel.Location = new System.Drawing.Point(12, 108);
-            this.RemoteDesignAddressLabel.Name = "RemoteDesignAddressLabel";
-            this.RemoteDesignAddressLabel.Size = new System.Drawing.Size(132, 13);
-            this.RemoteDesignAddressLabel.TabIndex = 1;
-            this.RemoteDesignAddressLabel.Text = "Address of remote design :";
-            // 
-            // UseRemoteDesignLabel
-            // 
-            this.UseRemoteDesignLabel.AutoSize = true;
-            this.UseRemoteDesignLabel.Location = new System.Drawing.Point(12, 84);
-            this.UseRemoteDesignLabel.Name = "UseRemoteDesignLabel";
-            this.UseRemoteDesignLabel.Size = new System.Drawing.Size(101, 13);
-            this.UseRemoteDesignLabel.TabIndex = 2;
-            this.UseRemoteDesignLabel.Text = "Use remote design :";
-            // 
-            // AddressRemoteDesginTextbox
-            // 
-            this.AddressRemoteDesginTextbox.Location = new System.Drawing.Point(179, 106);
-            this.AddressRemoteDesginTextbox.Name = "AddressRemoteDesginTextbox";
-            this.AddressRemoteDesginTextbox.Size = new System.Drawing.Size(100, 20);
-            this.AddressRemoteDesginTextbox.TabIndex = 4;
-            // 
             // CompanyNameTextbox
             // 
             this.CompanyNameTextbox.Location = new System.Drawing.Point(179, 9);
             this.CompanyNameTextbox.Name = "CompanyNameTextbox";
-            this.CompanyNameTextbox.Size = new System.Drawing.Size(100, 20);
+            this.CompanyNameTextbox.Size = new System.Drawing.Size(180, 20);
             this.CompanyNameTextbox.TabIndex = 1;
-            // 
-            // UseRemoteDesignCheckbox
-            // 
-            this.UseRemoteDesignCheckbox.AutoSize = true;
-            this.UseRemoteDesignCheckbox.Location = new System.Drawing.Point(179, 84);
-            this.UseRemoteDesignCheckbox.Name = "UseRemoteDesignCheckbox";
-            this.UseRemoteDesignCheckbox.Size = new System.Drawing.Size(15, 14);
-            this.UseRemoteDesignCheckbox.TabIndex = 3;
-            this.UseRemoteDesignCheckbox.UseVisualStyleBackColor = true;
-            this.UseRemoteDesignCheckbox.CheckedChanged += new System.EventHandler(this.UseRemoteDesignCheckbox_CheckedChanged);
             // 
             // ValidateButton
             // 
-            this.ValidateButton.Location = new System.Drawing.Point(325, 199);
+            this.ValidateButton.Location = new System.Drawing.Point(150, 84);
             this.ValidateButton.Name = "ValidateButton";
             this.ValidateButton.Size = new System.Drawing.Size(75, 23);
             this.ValidateButton.TabIndex = 7;
@@ -104,74 +62,42 @@
             this.ValidateButton.UseVisualStyleBackColor = true;
             this.ValidateButton.Click += new System.EventHandler(this.ValidateButton_Click);
             // 
-            // DivisionNameTextbox
+            // CompanyFilesPath
             // 
-            this.DivisionNameTextbox.Location = new System.Drawing.Point(179, 32);
-            this.DivisionNameTextbox.Name = "DivisionNameTextbox";
-            this.DivisionNameTextbox.Size = new System.Drawing.Size(100, 20);
-            this.DivisionNameTextbox.TabIndex = 2;
+            this.CompanyFilesPath.Location = new System.Drawing.Point(179, 32);
+            this.CompanyFilesPath.Name = "CompanyFilesPath";
+            this.CompanyFilesPath.Size = new System.Drawing.Size(180, 20);
+            this.CompanyFilesPath.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 13);
+            this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Division or Team Name :";
+            this.label1.Text = "Path for company files";
             // 
-            // UseSupportMailCheckbox
+            // BrowseCompanyFilesPath
             // 
-            this.UseSupportMailCheckbox.AutoSize = true;
-            this.UseSupportMailCheckbox.Location = new System.Drawing.Point(179, 154);
-            this.UseSupportMailCheckbox.Name = "UseSupportMailCheckbox";
-            this.UseSupportMailCheckbox.Size = new System.Drawing.Size(15, 14);
-            this.UseSupportMailCheckbox.TabIndex = 5;
-            this.UseSupportMailCheckbox.UseVisualStyleBackColor = true;
-            this.UseSupportMailCheckbox.CheckedChanged += new System.EventHandler(this.UseSupportMailCheckbox_CheckedChanged);
-            // 
-            // SupportMailTextBox
-            // 
-            this.SupportMailTextBox.Location = new System.Drawing.Point(179, 175);
-            this.SupportMailTextBox.Name = "SupportMailTextBox";
-            this.SupportMailTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SupportMailTextBox.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Report errors on support mailbox :";
-            // 
-            // SupportMailLabel
-            // 
-            this.SupportMailLabel.AutoSize = true;
-            this.SupportMailLabel.Location = new System.Drawing.Point(12, 176);
-            this.SupportMailLabel.Name = "SupportMailLabel";
-            this.SupportMailLabel.Size = new System.Drawing.Size(79, 13);
-            this.SupportMailLabel.TabIndex = 9;
-            this.SupportMailLabel.Text = "Mail of support:";
+            this.BrowseCompanyFilesPath.Location = new System.Drawing.Point(366, 32);
+            this.BrowseCompanyFilesPath.Name = "BrowseCompanyFilesPath";
+            this.BrowseCompanyFilesPath.Size = new System.Drawing.Size(34, 23);
+            this.BrowseCompanyFilesPath.TabIndex = 11;
+            this.BrowseCompanyFilesPath.Text = "...";
+            this.BrowseCompanyFilesPath.UseVisualStyleBackColor = true;
+            this.BrowseCompanyFilesPath.Click += new System.EventHandler(this.BrowseCompanyFilesPath_Click);
             // 
             // CompanyAndDesignOptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 234);
-            this.Controls.Add(this.UseSupportMailCheckbox);
-            this.Controls.Add(this.SupportMailTextBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.SupportMailLabel);
-            this.Controls.Add(this.DivisionNameTextbox);
+            this.ClientSize = new System.Drawing.Size(412, 124);
+            this.Controls.Add(this.BrowseCompanyFilesPath);
+            this.Controls.Add(this.CompanyFilesPath);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ValidateButton);
-            this.Controls.Add(this.UseRemoteDesignCheckbox);
             this.Controls.Add(this.CompanyNameTextbox);
-            this.Controls.Add(this.AddressRemoteDesginTextbox);
-            this.Controls.Add(this.UseRemoteDesignLabel);
-            this.Controls.Add(this.RemoteDesignAddressLabel);
             this.Controls.Add(this.CompanyLabel);
             this.Name = "CompanyAndDesignOptionForm";
             this.Text = "CompanyAndDesignOptionForm";
@@ -183,17 +109,10 @@
         #endregion
 
         private System.Windows.Forms.Label CompanyLabel;
-        private System.Windows.Forms.Label RemoteDesignAddressLabel;
-        private System.Windows.Forms.Label UseRemoteDesignLabel;
-        private System.Windows.Forms.TextBox AddressRemoteDesginTextbox;
         private System.Windows.Forms.TextBox CompanyNameTextbox;
-        private System.Windows.Forms.CheckBox UseRemoteDesignCheckbox;
         private System.Windows.Forms.Button ValidateButton;
-        private System.Windows.Forms.TextBox DivisionNameTextbox;
+        private System.Windows.Forms.TextBox CompanyFilesPath;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox UseSupportMailCheckbox;
-        private System.Windows.Forms.TextBox SupportMailTextBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label SupportMailLabel;
+        private System.Windows.Forms.Button BrowseCompanyFilesPath;
     }
 }

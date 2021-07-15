@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>BIA V3.3.4.0</Name>
+    <Name>BIA V3.4.0.0</Name>
     <Description>Project For BIA</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>

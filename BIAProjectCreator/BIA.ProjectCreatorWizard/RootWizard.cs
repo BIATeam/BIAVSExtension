@@ -87,6 +87,7 @@ namespace BIA.ProjectCreatorWizard
         public void RunFinished()
         {
             this.PlaceAdditionnalFilesInSolutionFolder();
+            this.CopyCompanyFiles();
         }
 
         /// <inheritdoc/>
@@ -122,6 +123,24 @@ namespace BIA.ProjectCreatorWizard
             this.Copy(path_dir, destPath);
         }
 
+        private void CopyCompanyFiles()
+        {
+            if (!string.IsNullOrEmpty(ViewModel.CompanyFilesPath))
+            {
+                var srcPath = ViewModel.CompanyFilesPath;
+                if (File.Exists(srcPath+ "/.biaCompanyFiles"))
+                {
+                    var destPath = Path.Combine(this.destFolder.FullName, this.solutionName);
+                    var tmpPath = destPath + "/tmp";
+                    this.Copy(srcPath, tmpPath);
+                }
+                else
+                {
+                    MessageBox.Show("The company file folder is not correct : it does not contain the file .biaCompanyFiles");
+                }
+            }
+        }
+
         /// <summary>
         /// Copy files for VSIX AdditionnalFiles folder to the root solution folder.
         /// </summary>
@@ -130,6 +149,13 @@ namespace BIA.ProjectCreatorWizard
         private void Copy(string sourceDir, string targetDir)
         {
             Directory.CreateDirectory(targetDir);
+            foreach (var dir in Directory.GetDirectories(sourceDir))
+            {
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
+            }
 
             foreach (var file in Directory.GetFiles(sourceDir))
             {

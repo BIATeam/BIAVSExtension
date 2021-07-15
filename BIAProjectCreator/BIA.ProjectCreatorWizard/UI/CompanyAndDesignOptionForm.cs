@@ -23,53 +23,30 @@ namespace BIA.ProjectCreatorWizard.UI
         {
             this.InitializeComponent();
 
-            this.AddressRemoteDesginTextbox.Visible = false;
-            this.RemoteDesignAddressLabel.Visible = false;
-            this.SupportMailLabel.Visible = false;
-            this.SupportMailTextBox.Visible = false;
-
             this.viewModel = viewModel;
         }
 
-        private void UseRemoteDesignCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.UseRemoteDesignCheckbox.Checked)
-            {
-                this.AddressRemoteDesginTextbox.Visible = true;
-                this.RemoteDesignAddressLabel.Visible = true;
-            }
-            else
-            {
-                this.AddressRemoteDesginTextbox.Visible = false;
-                this.RemoteDesignAddressLabel.Visible = false;
-            }
-        }
 
         private void ValidateButton_Click(object sender, EventArgs e)
         {
             this.viewModel.CompanyName = this.CompanyNameTextbox.Text;
-            this.viewModel.DivisionName = this.DivisionNameTextbox.Text;
-            this.viewModel.UseRemoteDesign = this.UseRemoteDesignCheckbox.Checked;
-            this.viewModel.RemoteDesignAddress = this.AddressRemoteDesginTextbox.Text;
-
-            this.viewModel.SupportMail = this.SupportMailTextBox.Text;
-            this.viewModel.UseSupportMail = this.UseSupportMailCheckbox.Checked;
+            this.viewModel.CompanyFilesPath = this.CompanyFilesPath.Text;
 
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void UseSupportMailCheckbox_CheckedChanged(object sender, EventArgs e)
+        private void BrowseCompanyFilesPath_Click(object sender, EventArgs e)
         {
-            if (this.UseSupportMailCheckbox.Checked)
+            using (var fbd = new FolderBrowserDialog())
             {
-                this.SupportMailTextBox.Visible = true;
-                this.SupportMailLabel.Visible = true;
-            }
-            else
-            {
-                this.SupportMailTextBox.Visible = false;
-                this.SupportMailLabel.Visible = false;
+                fbd.SelectedPath = this.CompanyFilesPath.Text;
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    this.CompanyFilesPath.Text = fbd.SelectedPath;
+                }
             }
         }
     }
