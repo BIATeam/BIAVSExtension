@@ -1,0 +1,129 @@
+021-07-15 10:19:00.478 +02:00 [INF] Loaded 3 extensions
+2021-07-15 10:19:01.201 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-15 10:19:03.473 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-15 10:19:03.481 +02:00 [INF] Setting entrypoint to user selected project: D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreator\BIA.ProjectCreator.csproj
+2021-07-15 10:19:03.493 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-15 10:19:03.677 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-15 10:19:54.661 +02:00 [INF] Applying upgrade step Back up project
+2021-07-15 10:20:00.016 +02:00 [INF] Backing up D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreator to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreator.backup
+2021-07-15 10:20:00.775 +02:00 [INF] Project backed up to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreator.backup
+2021-07-15 10:20:00.777 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-15 10:20:02.298 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-15 10:20:04.110 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-15 10:20:04.116 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-15 10:20:05.601 +02:00 [INF] [dotnet] This project has an unrecognized custom import which may need reviewed after conversion: Microsoft.VsSDK.targets
+2021-07-15 10:20:05.689 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-15 10:20:06.390 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-15 10:20:09.499 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-15 10:20:10.840 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-15 10:20:15.582 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.233001) needs added
+2021-07-15 10:20:15.592 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:20:16.688 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-15 10:20:16.696 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:20:21.184 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-15 10:20:21.953 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-15 10:20:22.012 +02:00 [INF] TFM needs updated to netstandard2.0
+2021-07-15 10:20:23.086 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-15 10:20:25.910 +02:00 [INF] Updated TFM to netstandard2.0
+2021-07-15 10:20:25.912 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-15 10:20:26.943 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-15 10:20:29.122 +02:00 [INF] No package updates needed
+2021-07-15 10:20:29.125 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-15 10:20:29.133 +02:00 [INF] 0 expected template items needed
+2021-07-15 10:20:29.169 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-15 10:20:30.499 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-15 10:20:32.982 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-15 10:20:32.983 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-15 10:20:34.509 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-15 10:20:34.513 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-15 10:20:35.244 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-15 10:20:35.247 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-15 10:20:36.591 +02:00 [INF] Upgrade has completed. Please review any changes.
+2021-07-15 10:21:44.353 +02:00 [INF] Loaded 3 extensions
+2021-07-15 10:21:44.975 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-15 10:21:47.599 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-15 10:21:47.604 +02:00 [INF] Setting entrypoint to only project in solution: D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorWizard\BIA.ProjectCreatorWizard.csproj
+2021-07-15 10:21:47.612 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-15 10:21:47.635 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-15 10:21:48.619 +02:00 [INF] Applying upgrade step Back up project
+2021-07-15 10:21:50.518 +02:00 [INF] Backing up D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorWizard to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorWizard.backup
+2021-07-15 10:21:50.641 +02:00 [INF] Project backed up to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorWizard.backup
+2021-07-15 10:21:50.643 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-15 10:21:54.001 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-15 10:21:54.905 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-15 10:21:54.909 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-15 10:21:57.744 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-15 10:21:58.210 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-15 10:22:01.162 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-15 10:22:02.056 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-15 10:22:04.441 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.233001) needs added
+2021-07-15 10:22:04.453 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:22:05.559 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-15 10:22:05.567 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:22:07.888 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-15 10:22:07.917 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-15 10:22:07.927 +02:00 [INF] TFM needs updated to net5.0-windows
+2021-07-15 10:22:08.645 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-15 10:22:11.604 +02:00 [INF] Updated TFM to net5.0-windows
+2021-07-15 10:22:11.606 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-15 10:22:12.757 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-15 10:22:17.246 +02:00 [INF] Adding Microsoft.Windows.Compatibility 5.0.2
+2021-07-15 10:22:17.252 +02:00 [INF] Packages to be added: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-15 10:22:18.469 +02:00 [INF] Applying upgrade step Update NuGet Packages
+2021-07-15 10:22:18.470 +02:00 [INF] Adding package reference: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-15 10:22:30.866 +02:00 [INF] Marking package System.Data.DataSetExtensions for removal because it appears to be a transitive dependency
+2021-07-15 10:22:30.873 +02:00 [INF] Marking package System.DirectoryServices for removal because it appears to be a transitive dependency
+2021-07-15 10:22:30.912 +02:00 [INF] Removing outdated package reference: System.Data.DataSetExtensions, Version=4.5.0
+2021-07-15 10:22:30.917 +02:00 [INF] Removing outdated package reference: System.DirectoryServices, Version=5.0.0
+2021-07-15 10:22:34.297 +02:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-07-15 10:22:34.335 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-15 10:22:34.346 +02:00 [INF] 0 expected template items needed
+2021-07-15 10:22:34.389 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-15 10:22:36.384 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-15 10:22:41.761 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-15 10:22:41.763 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-15 10:22:43.022 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-15 10:22:45.573 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-15 10:22:45.576 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-15 10:22:47.757 +02:00 [INF] Upgrade has completed. Please review any changes.
+2021-07-15 10:23:34.785 +02:00 [INF] Loaded 3 extensions
+2021-07-15 10:23:35.449 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-15 10:23:37.460 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-15 10:23:37.465 +02:00 [INF] Setting entrypoint to only project in solution: D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorTemplateV3\BIA.ProjectCreatorTemplateV3.csproj
+2021-07-15 10:23:37.472 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-15 10:23:37.496 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-15 10:23:39.002 +02:00 [INF] Applying upgrade step Back up project
+2021-07-15 10:23:40.269 +02:00 [INF] Backing up D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorTemplateV3 to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorTemplateV3.backup
+2021-07-15 10:23:40.876 +02:00 [INF] Project backed up to D:\Sources\GitHub\BIATeam\BIAVSExtension\BIAProjectCreator\BIA.ProjectCreatorTemplateV3.backup
+2021-07-15 10:23:40.878 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-15 10:23:42.217 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-15 10:23:43.154 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-15 10:23:43.159 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-15 10:23:44.603 +02:00 [INF] [dotnet] This project has an unrecognized custom import which may need reviewed after conversion: Microsoft.VsSDK.targets
+2021-07-15 10:23:44.606 +02:00 [INF] [dotnet] This project has an unrecognized custom import which may need reviewed after conversion: $(TemplateBuilderTargets)
+2021-07-15 10:23:44.692 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-15 10:23:45.199 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-15 10:23:47.205 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-15 10:23:49.418 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-15 10:23:51.897 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.233001) needs added
+2021-07-15 10:23:51.907 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:23:53.501 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-15 10:23:53.509 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-15 10:23:56.004 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-15 10:23:56.031 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-15 10:23:56.043 +02:00 [INF] TFM needs updated to netstandard2.0
+2021-07-15 10:23:56.939 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-15 10:23:59.340 +02:00 [INF] Updated TFM to netstandard2.0
+2021-07-15 10:23:59.342 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-15 10:24:00.166 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-15 10:24:02.330 +02:00 [INF] No package updates needed
+2021-07-15 10:24:02.332 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-15 10:24:02.340 +02:00 [INF] 0 expected template items needed
+2021-07-15 10:24:02.365 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-15 10:24:05.061 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-15 10:24:06.527 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-15 10:24:06.529 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-15 10:24:07.998 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-15 10:24:09.375 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-15 10:24:09.377 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-15 10:24:10.399 +02:00 [INF] Upgrade has completed. Please review any changes.

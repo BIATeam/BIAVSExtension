@@ -72,6 +72,13 @@ foreach ($file in $allFiles)
 	$filePath = $file.FullName
 	# Write-Host "Treate file : $filePath"
 	$text = [IO.File]::ReadAllText("$filePath") -replace $projectTemplateName, "`$saferootprojectname`$"
+	[IO.File]::WriteAllText("$filePath", $text)
+}
+$allFiles = Get-ChildItem -File -Path "$RepTarget" -Exclude "*.vstemplate" -rec | Where-Object { Select-String $companyateTemplateName $_ -Quiet }
+foreach ($file in $allFiles)
+{
+	$filePath = $file.FullName
+	# Write-Host "Treate file : $filePath"
 	$text = [IO.File]::ReadAllText("$filePath") -replace $companyateTemplateName, "`$safecompanyName`$"
 	[IO.File]::WriteAllText("$filePath", $text)
 }
