@@ -111,7 +111,6 @@ namespace BIA.ProjectCreatorWizard
         /// <inheritdoc/>
         public void ProjectFinishedGenerating(Project project)
         {
-            int i = 0;
             // Method intentionally left empty.
         }
 
@@ -125,7 +124,7 @@ namespace BIA.ProjectCreatorWizard
 
             string path_codebase = System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
 
-            string path_dir = Path.GetDirectoryName(path_codebase).Replace("file:\\", string.Empty) + "\\AdditionalFiles\\";
+            string path_dir = Path.GetDirectoryName(path_codebase).Replace("file:\\", string.Empty) + "\\AdditionalFiles";
 
             this.Copy(path_dir, destPath);
         }
@@ -145,6 +144,8 @@ namespace BIA.ProjectCreatorWizard
                     this.ReplaceInFileAndFileName(tmpPath, "BIATemplate", this.solutionName);
 
                     this.Copy(tmpPath, destPath);
+
+                    Directory.Delete(tmpPath, true);
                 }
                 else
                 {
@@ -175,6 +176,7 @@ namespace BIA.ProjectCreatorWizard
                 string targetFile = Path.Combine(targetDir, this.GetRelativePath(sourceDir + "\\", file));
                 File.Copy(file, targetFile, true);
                 this.ReplaceInFile(targetFile, "BIATemplate", this.solutionName);
+                this.ReplaceInFile(targetFile, "TheBIADevCompany", ViewModel.CompanyName);
             }
 
             foreach (var directory in Directory.GetDirectories(sourceDir))
@@ -216,6 +218,7 @@ namespace BIA.ProjectCreatorWizard
                     string newName = Path.Combine(sourceDir, name.Replace(oldString, newString));
                     File.Move(file, newName);
                 }
+
                 this.ReplaceInFile(file, oldString, newString);
             }
 

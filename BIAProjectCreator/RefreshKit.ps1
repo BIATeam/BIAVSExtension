@@ -59,7 +59,7 @@ foreach ($file in $allFiles)
 	$filePath = $file.FullName
 	Write-Host "Clean template file : $filePath"
 	Set-Content -Path $filePath -Value (get-content -Path $filePath | Where-Object { 
-	($_ -NotMatch '(appsettings|bianetconfig).*.json*' -or $_ -like '*appsettings.Example*.json*' -or $_ -like '*bianetconfig.Example*.json*')
+	($_ -NotMatch '(appsettings|bianetconfig).*.json*' -or $_ -like '*appsettings.Example*.json*' -or $_ -like '*bianetconfig.Example*.json*' -or $_ -like '*appsettings.json*' -or $_ -like '*bianetconfig.json*')
 	})
 }
 
